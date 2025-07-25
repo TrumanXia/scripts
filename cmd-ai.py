@@ -59,7 +59,7 @@ if __name__ == "__main__":
         except KeyboardInterrupt:
             # 处理Ctrl+C中断
             print("\n程序已退出，再见！")
-            time.sleep(1)  # 等待3秒
+            time.sleep(1)  # 等待1秒
             break
         except Exception as e:
             print(f"发生错误：{str(e)}，请重试")
