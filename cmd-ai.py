@@ -4,7 +4,7 @@ import pyperclip  # 用于操作剪贴板
 
 client = OpenAI(
   base_url="https://openrouter.ai/api/v1",
-  api_key="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",
+  api_key="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",
 )
 
 def get_command(chinese_description):
