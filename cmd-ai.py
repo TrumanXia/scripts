@@ -8,7 +8,7 @@ client = OpenAI(
 )
 
 def get_command(chinese_description):
-    prompt = f"将下面的中文描述转换为对应的命令行指令，只返回命令本身，不做额外解释：\n{chinese_description}"
+    prompt = f"将下面的中文描述转换为对应的windows命令行指令，只返回命令本身，不做额外解释：\n{chinese_description}"
     completion = client.chat.completions.create(
         extra_headers={
             "HTTP-Referer": "<YOUR_SITE_URL>", # Optional. Site URL for rankings on openrouter.ai.
